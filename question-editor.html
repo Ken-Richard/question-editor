@@ -1,0 +1,21 @@
+<head>
+  <title>question-editor</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Question Editor</h1>
+  </header>
+
+  <ul>
+    {{#each questions}}
+      {{> question}}
+    {{/each}}
+  </ul>
+
+</body>
+
+<template name="question">
+  <li>{{text}}</li>
+</template>
